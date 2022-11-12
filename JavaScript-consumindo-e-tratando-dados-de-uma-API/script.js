@@ -70,3 +70,38 @@ function mandaMensagem () {
 setTimeout(mandaMensagem, 5000); //MANDA PARA O TASK QUEUE E ESPERA 5 SEGUNDS
 
 console.log("Xau xau!")*/
+
+
+/*
+
+//IIFF Se eu não quiser que ngm chame ou se tenho o mesmo nome variavel na javascript
+(function (){
+    const getPerson = () => ({name:"Henry", eye: "black"});
+
+    console.log(getPerson());
+}());
+
+(() => {
+    const getPerson = () => ({name:"Henry", eye: "black"});
+
+    console.log(getPerson());
+})();
+
+//This
+(() => {
+    function Person(){
+        
+        this.year = 0;
+
+        setInterval(() => {
+            this.year = this.year + 1
+            console.log('Qual o this?', this)
+            console.log('Qual é a idade?', this.year)
+        }, 1000 )
+    }
+    
+    const p1 = new Person()
+  
+})();
+
+*/
